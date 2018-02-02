@@ -32,3 +32,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+vrnd-build-an-apartment/Assets/GoogleVR/Plugins/iOS/libaudioplugingvrunity.a
+vrnd-build-an-apartment/Assets/GoogleVR/Plugins/iOS/libaudioplugingvrunity.a.meta
