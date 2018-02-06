@@ -6,6 +6,6 @@ This project is part of [Udacity](https://www.udacity.com "Udacity - Be in deman
 - Unity 2017.2.0f3
 - GVR Unity SDK v1.70.0
 
-## Credits
+## Credits (for free assets download)
 - Peter Harmatiy - Bar Chair 2 - Version 1 (https://harpet.artstation.com)
 - Vertex Studio - Big Funrniture Pack - Version 1.3 (http://vxstudio.ru/en/)
