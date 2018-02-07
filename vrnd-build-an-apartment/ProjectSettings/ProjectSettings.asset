@@ -11,8 +11,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Udacity.TondiniStephane
-  productName: Build an Apartment
+  companyName: TondiniStephane
+  productName: Course 2 Project
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -151,7 +151,7 @@ PlayerSettings:
     Android: com.Udacity.BuildAnApartment
     Standalone: com.Udacity.BuildAnApartment
     Tizen: com.MattSonic.Course2Project
-    iOS: com.Udacity.TondiniStephane.BuildAnApartment
+    iOS: com.TondiniStephane.Course2Project
     tvOS: com.MattSonic.Course2Project
   buildNumber:
     iOS: 0
