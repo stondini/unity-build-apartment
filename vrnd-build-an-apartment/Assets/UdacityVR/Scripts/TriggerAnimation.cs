@@ -11,11 +11,29 @@ public class TriggerAnimation : MonoBehaviour
 	[Tooltip ("The name of the Animator trigger parameter")]
 	public string triggerName;
 
+    private bool isAnimated = false;
+    private float normalizedTime = 0.0F;
+
 	void Update ()
 	{
+        int hash = Animator.StringToHash("Globe Animation");
+        // Save the animation normalized time
+        if (animator.GetCurrentAnimatorStateInfo(0).shortNameHash == hash)
+        {
+            this.normalizedTime = animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+        }
 		// If the player pressed the cardboard button (or touched the screen), set the trigger parameter to active (until it has been used in a transition)
 		if (Input.GetMouseButtonDown (0)) {
-			animator.SetTrigger (triggerName);
+            if (!this.isAnimated)
+            {
+                // Debug.Log("Restore: "+this.normalizedTime);
+                animator.Play(hash, 0, this.normalizedTime);
+            } else {
+                // Debug.Log("Save: " + this.normalizedTime);
+                animator.SetTrigger(triggerName);
+            }
+
+            this.isAnimated = !this.isAnimated;
 		}
 	}
 }
